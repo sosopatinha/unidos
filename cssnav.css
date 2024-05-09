@@ -1,0 +1,66 @@
+.logo img {
+    height: 80px; /* Ajuste conforme necessário */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 25px; /* Mantém a margem entre os itens */
+}
+
+nav ul li a {
+    padding: 10px 15px;
+    border-radius: 20px; /* bordas arredondadas */
+    transition: background-color 0.3s, color 0.3s; 
+    text-decoration: none; 
+    color: #000000;
+}
+
+nav ul li a:hover {
+    background-color: #1f0e6b;
+    color: #fff;
+}
+
+.redes-sociais {
+    display: flex;
+    align-items: center;
+}
+
+.redes-sociais a {
+    margin-left: 10px;
+}
+
+.redes-sociais img {
+    height: 30px; /* Ajuste conforme necessário */
+    border-radius: 50%; /* Deixa as imagens dos ícones circulares */
+}
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-right: 0; /* Remove a margem direita dos itens */
+        margin-bottom: 10px;
+    }
+
+    .redes-sociais {
+        margin-top: 10px;
+        margin-left: auto; /* Move as redes sociais para o canto direito */
+    }
+}

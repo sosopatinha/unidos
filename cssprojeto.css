@@ -18,10 +18,85 @@ main {
     padding: 20px;
 }
 
+
+/* RODAPÉ */
 footer {
     background-color: #333;
     color: #fff;
     padding: 20px;
     text-align: center;
+}
+
+/* CSS DO CARROSSEL */
+  
+
+
+
+
+
+/*POP UP*/
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(91, 46, 153, 0.9); /* Cor com transparência */
+    border-radius: 20px; /* Bordas arredondadas */
+    width: 650px; /* Defina a largura desejada */
+    padding: 20px; /* Ajuste o preenchimento conforme necessário */
+    z-index: 9999;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra */
+}
+/* Estilos para o fundo escuro */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor com transparência */
+    z-index: 9998;
+}
+.popup p {
+    position: left;
+    width: calc(50% - 10px); /* Calcula a largura para ocupar metade do espaço com uma pequena margem */
+    border: 1px solid #ccc; /* Adiciona borda */
+    padding: 10px; /* Ajusta o preenchimento da borda */
+    box-sizing: border-box; /* Inclui a largura da borda no cálculo do tamanho */
+}
+
+
+/*teste cartas*/
+
+   /* Estilo para a div que contém as cartas */
+   .conjunto-cartas {
+    display: flex;
+    justify-content: center; /* Centraliza as cartas horizontalmente */
+    margin-right: 90px; /* Move um pouco para a esquerda */
+}
+
+.conjunto-cartas button {
+    background: none; /* Remove o fundo do botão */
+    border: none; /* Remove a borda do botão */
+    padding: 0; /* Remove o preenchimento do botão */
+    margin: 0 10px; /* Adiciona uma margem entre as cartas */
+}
+
+.conjunto-cartas button img {
+    position: right;
+    width: 200px; /* Ajusta a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.conjunto-cartas p {
+    position: left;
+    width: calc(50% - 10px); /* Calcula a largura para ocupar metade do espaço com uma pequena margem */
+    border: 1px solid #ccc; /* Adiciona borda */
+    padding: 10px; /* Ajusta o preenchimento da borda */
+    box-sizing: border-box; /* Inclui a largura da borda no cálculo do tamanho */
+    margin-right: 3%; /* Ajuste essa porcentagem conforme necessário */
+    margin-left: auto;
 }
 
