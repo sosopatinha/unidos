@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institucional</title>
+    <link rel="stylesheet" href="C:\Users\word1\Documents\projeto 2024\cssprojeto.css">
+    <link rel="stylesheet" href="C:\Users\word1\Documents\projeto 2024\cssnav.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="projeto2teste.html">
+                <img src= "C:\Users\word1\Documents\projeto 2024\img\logo.png" alt="Logo do Site">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="institucional.html">Institucional</a></li>
+                <li><a href="quemsomos.html">Quem somos?</a></li>
+                <li><a href="calendario.html">Calendário</a></li>
+                <li><a href="contato.html">Contatos</a></li>
+            </ul>
+        </nav>
+        <div class="redes-sociais">
+            <a href="https://www.instagram.com/escoladefutebolunidos?igsh=eDF4aHY5Z3ExeDgw"><img src="C:\Users\word1\Documents\projeto 2024\img\instagram.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/escolinhadefutebolujr?mibextid=ZbWKwL"><img src="C:\Users\word1\Documents\projeto 2024\img\facebook.png" alt="Facebook"></a>
+            <a href="https://youtube.com/@TVUnidosJR?si=W5w7UtAr65PTvxIj"><img src="C:\Users\word1\Documents\projeto 2024\img\youtube.png" alt="YouTube"></a>
+        </div>
+    </header>
+    <main>
+
+        <!-- CARTINHAS -->
+
+         <!-- botões  -->
+        <div class="conjunto-cartas">
+           
+            <button onclick="openPopup('carta1')">
+                <img src="C:\Users\word1\Documents\projeto 2024\img\cartinha.png" alt="carta1">
+            </button>
+
+           
+            <button onclick="openPopup('carta2')">
+                <img src="C:\Users\word1\Documents\projeto 2024\img\cartinha.png" alt="carta2">
+            </button>
+
+            <button onclick="openPopup('carta3')">
+                <img src="C:\Users\word1\Documents\projeto 2024\img\cartinha.png" alt="carta3">
+            </button>
+        </div>
+
+        <!-- Conteúdo do pop-up -->
+
+<div id="popup-carta1" class="popup" style="display: none;">
+    <div style="display: flex; align-items: center;">
+        <img src="C:\Users\word1\Documents\projeto 2024\img\cartinha.png" style="margin-right: 20px;" alt="carta1">
+        <div>
+            <h2>Pop-up Content 1</h2>
+            <p>Este é um exemplo de pop-up em HTML para a carta 1.</p>
+        </div>
+    </div>
+    <br><br><br><br><br>
+    <button onclick="closePopup('carta1')">Fechar</button>
+</div>
+
+
+
+<div id="popup-carta2" class="popup" style="display: none;">
+    <div style="display: flex; align-items: center;">
+        <img src="C:\Users\word1\Documents\projeto 2024\img\cartinha.png" style="margin-right: 20px;" alt="carta2">
+        <div>
+            <h2>Pop-up Content 2</h2>
+            <p>Este é um exemplo de pop-up em HTML para a carta 2.</p>
+        </div>
+    </div>
+    <br><br><br><br><br>
+    <button onclick="closePopup('carta2')">Fechar</button>
+</div>
+
+
+
+<div id="popup-carta3" class="popup" style="display: none;">
+    <div style="display: flex; align-items: center;">
+        <img src="C:\Users\word1\Documents\projeto 2024\img\cartinha.png" style="margin-right: 20px;" alt="carta3">
+        <div>
+            <h2>Pop-up Content 3</h2>
+            <p>Este é um exemplo de pop-up em HTML para a carta 3.</p>
+        </div>
+    </div>
+    <br><br><br><br><br>
+    <button onclick="closePopup('carta3')">Fechar</button>
+</div>
+
+
+        <!-- Fundo escuro para cobrir o restante da página -->
+        <div id="overlay" class="overlay" style="display: none;"></div>
+
+        <script>
+            // Função para abrir o pop-up
+            function openPopup(cardId) {
+                document.getElementById("popup-" + cardId).style.display = "block";
+                document.getElementById("overlay").style.display = "block";
+            }
+
+            // Função para fechar o pop-up
+            function closePopup(cardId) {
+                document.getElementById("popup-" + cardId).style.display = "none";
+                document.getElementById("overlay").style.display = "none";
+            }
+        </script>
+
+    </main>
+    <footer>
+        <!-- Rodapé -->
+    </footer>
+    <script src="C:\Users\word1\Documents\projeto 2024\javascript\script.js"></script>
+</body>
+</html>
